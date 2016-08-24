@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Karla", sans-serif;
+  color: #E8EAF6;
+  background: #EF6C00;
+  background: -webkit-linear-gradient(170deg, #ff9800 0%, #e65100 100%);
+  background: linear-gradient(280deg, #ff9800 0%, #e65100 100%);
+}
+
+#switch {
+  background: none;
+  color: #fff;
+  border: none;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: .5rem;
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+}
+
+header {
+  margin: .5rem;
+}
+header h1 {
+  margin: .5rem;
+}
+
+.main {
+  min-height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.today {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 0;
+}
+
+.box {
+  padding: .5rem;
+}
+
+.three-day {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.three-day span {
+  border-left: 1px solid #FFFFFF;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: .1rem;
+}
+.three-day span h3 {
+  margin: .5rem 0;
+}
+.three-day span h4 {
+  margin: .5rem 0;
+}
+.three-day span img {
+  max-width: 4rem;
+  margin-bottom: .5rem;
+}
+
+#day1 {
+  border-left: none;
+}
+
+#weatherIco {
+  max-width: 8rem;
+  margin-top: .5rem;
+}
+
+@media screen and (min-width: 400px) {
+  .box h1 {
+    margin: 1rem;
+  }
+
+  body {
+    font-size: 125%;
+  }
+
+  #switch {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  body {
+    text-shadow: 2px 2px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+    background-image: url("");
+    background-image: url("https://source.unsplash.com/category/nature/720x405");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #switch {
+    margin-bottom: 2rem;
+    border: 1px solid #fff;
+    padding: .5rem;
+    border-radius: .3rem;
+  }
+
+  .main {
+    max-width: 80%;
+    margin: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  header {
+    margin: 2rem;
+    margin-top: 5rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50%;
+    width: 100%;
+  }
+  header h1 {
+    margin-bottom: 1rem;
+  }
+
+  .today {
+    margin-right: 0;
+    -webkit-flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
+  }
+
+  .three-day {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-basis: 70%;
+        -ms-flex-preferred-size: 70%;
+            flex-basis: 70%;
+  }
+  .three-day span {
+    max-height: 13vh;
+    text-align: left;
+    padding: .5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+    margin: 1rem;
+    border-bottom: 1px solid white;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .three-day span h3 {
+    width: 3rem;
+    margin-right: .5rem;
+  }
+  .three-day span h4 {
+    width: 6rem;
+    margin: 0 .5rem;
+  }
+  .three-day span img {
+    max-width: 5rem;
+    margin: 0 .5rem;
+  }
+  .three-day span p {
+    max-width: 5rem;
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 150%;
+    background-image: url("https://source.unsplash.com/category/nature/1280x720");
+  }
+
+  #switch {
+    margin-top: 2rem;
+  }
+
+  .main {
+    max-width: 60%;
+  }
+
+  .three-day {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-basis: 60%;
+        -ms-flex-preferred-size: 60%;
+            flex-basis: 60%;
+  }
+  .three-day span h3 {
+    margin-right: 1rem;
+  }
+  .three-day span h4 {
+    width: 7rem;
+  }
+  .three-day span img {
+    max-width: 6rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    background-image: url("https://source.unsplash.com/category/nature/1600x900");
+  }
+
+  .today {
+    margin: 5rem;
+    margin-right: 0;
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+  }
+
+  .three-day {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body {
+    background-image: url("https://source.unsplash.com/category/nature/1920x1080");
+    font-size: 175%;
+  }
+
+  .main {
+    max-width: 50%;
+  }
+
+  .today {
+    margin-right: 0;
+  }
+
+  .three-day {
+    -webkit-flex-basis: 70%;
+        -ms-flex-preferred-size: 70%;
+            flex-basis: 70%;
+  }
+  .three-day span h3 {
+    margin-right: 2rem;
+  }
+  .three-day span h4 {
+    width: 8rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body {
+    background-image: url("https://source.unsplash.com/category/nature/2560x1440");
+  }
+
+  #switch {
+    margin-top: 2.5rem;
+  }
+
+  .main {
+    max-width: 40%;
+  }
+
+  .three-day {
+    -webkit-flex-basis: 60%;
+        -ms-flex-preferred-size: 60%;
+            flex-basis: 60%;
+  }
+  .three-day span p {
+    width: 10rem;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+        <header>
+            <h1 id="city"></h1>
+            <h3 id="date"></h3>
+        </header>
+
+        <div class="today">
+            <div class="box one">
+                <img id="weatherIco" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/tail-spin.svg" alt="Forecast Today">
+                <h1 id="current-temp"></h1>
+                <h2 id="condition"></h2>
+            </div>
+            <div class="box two">
+                <h3 id="minmax"></h3>
+                <button id="switch">Switch to °F</button>
+            </div>
+        </div>
+
+        <div class="three-day">
+            <span id="day1"><h3></h3><h4></h4><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/tail-spin.svg" alt="Forecast Tomorrow" /><p></p></span>
+            <span id="day2"><h3></h3><h4></h4><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/tail-spin.svg" alt="Forecast The Day After Tomorrow" /><p></p></span>
+            <span id="day3"><h3></h3><h4></h4><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/tail-spin.svg" alt="Forecast The Third Day" /><p></p></span>
+        </div>
+    </div>
+
+  </body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
+</html>
